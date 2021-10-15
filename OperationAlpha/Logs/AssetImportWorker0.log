@@ -1209,3 +1209,4 @@ Received Import Request.
 Start importing Assets/Scenes/Corridor1.unity using Guid(981d8307cc6e3924a8732e83195dd06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7002673341c9ed9298b6ac53aec2d7a3') in 0.009492 seconds 
   Import took 0.012474 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
