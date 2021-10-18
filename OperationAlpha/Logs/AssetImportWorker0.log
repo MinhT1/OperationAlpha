@@ -737,3 +737,4 @@ Received Import Request.
 Start importing Assets/Castle Building Kit/Prefabs/Blocks Prefabs/Castle Block 5x4x5.prefab using Guid(082b1d4e7ffb6e142adc8dedd5b055e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece57b0559755d33e6cc18c33e762009') in 0.039821 seconds 
   Import took 0.042505 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
