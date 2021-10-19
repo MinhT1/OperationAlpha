@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -178,7 +182,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (26)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &8404457 stripped
 Transform:
@@ -266,6 +271,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -314,7 +323,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (37)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &16623704 stripped
 Transform:
@@ -384,7 +394,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoofWall
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &42898156 stripped
 Transform:
@@ -454,7 +465,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoofWall (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &100072304 stripped
 Transform:
@@ -524,7 +536,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoofWall (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &111656708 stripped
 Transform:
@@ -600,6 +613,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -648,7 +665,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &126309606 stripped
 Transform:
@@ -936,6 +954,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -984,7 +1006,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (18)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &188988120 stripped
 Transform:
@@ -998,6 +1021,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1046,7 +1073,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &193119866 stripped
 Transform:
@@ -1122,6 +1150,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 49
@@ -1170,7 +1202,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (49)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &212400231 stripped
 Transform:
@@ -1184,6 +1217,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -1232,7 +1269,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (16)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &290352082 stripped
 Transform:
@@ -1246,6 +1284,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -1294,7 +1336,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (23)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &310188638 stripped
 Transform:
@@ -1530,6 +1573,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -1578,7 +1625,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &411694700 stripped
 Transform:
@@ -1749,7 +1797,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoofWall (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &425032398 stripped
 Transform:
@@ -1819,7 +1868,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoofWall (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &499205754 stripped
 Transform:
@@ -1833,6 +1883,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -1881,7 +1935,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (21)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &533694909 stripped
 Transform:
@@ -1991,6 +2046,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 52
@@ -2039,7 +2098,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (52)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &585185998 stripped
 Transform:
@@ -2122,6 +2182,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 58
@@ -2170,7 +2234,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (58)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &599992832 stripped
 Transform:
@@ -2184,6 +2249,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -2232,7 +2301,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (50)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &616015984 stripped
 Transform:
@@ -2364,7 +2434,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoofWall (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &630342493 stripped
 Transform:
@@ -2378,6 +2449,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -2426,7 +2501,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (19)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &631031052 stripped
 Transform:
@@ -2440,6 +2516,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 54
@@ -2488,7 +2568,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (54)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &637354246 stripped
 Transform:
@@ -2502,6 +2583,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2550,7 +2635,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &690511669 stripped
 Transform:
@@ -2564,6 +2650,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -2612,7 +2702,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (44)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &709890047 stripped
 Transform:
@@ -2626,6 +2717,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -2674,7 +2769,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (30)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &718117795 stripped
 Transform:
@@ -2744,7 +2840,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoofWall (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &758979174 stripped
 Transform:
@@ -2758,6 +2855,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -2806,7 +2907,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (55)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &763043917 stripped
 Transform:
@@ -2965,6 +3067,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3013,7 +3119,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &829595000 stripped
 Transform:
@@ -3027,6 +3134,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -3075,7 +3186,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (34)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &854425678 stripped
 Transform:
@@ -3089,6 +3201,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -3137,7 +3253,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &856806807 stripped
 Transform:
@@ -3151,6 +3268,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -3199,7 +3320,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (32)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &857497700 stripped
 Transform:
@@ -3213,6 +3335,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -3261,7 +3387,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (25)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &878659811 stripped
 Transform:
@@ -3275,6 +3402,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 62
@@ -3323,7 +3454,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (62)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &902111265 stripped
 Transform:
@@ -3585,6 +3717,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -3633,7 +3769,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (46)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1054932801 stripped
 Transform:
@@ -3647,6 +3784,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 61
@@ -3695,7 +3836,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (61)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1058061847 stripped
 Transform:
@@ -3709,6 +3851,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 51
@@ -3757,7 +3903,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (51)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1058546456 stripped
 Transform:
@@ -3771,6 +3918,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -3819,7 +3970,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1131239843 stripped
 Transform:
@@ -3833,6 +3985,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -3881,7 +4037,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (43)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1142306618 stripped
 Transform:
@@ -3895,6 +4052,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -3943,7 +4104,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (48)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1147140364 stripped
 Transform:
@@ -4161,7 +4323,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoofWall (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1171616639 stripped
 Transform:
@@ -4232,6 +4395,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -4280,7 +4447,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1193108675 stripped
 Transform:
@@ -4412,7 +4580,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoofWall (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1243413281 stripped
 Transform:
@@ -4426,6 +4595,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -4474,7 +4647,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (33)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1243453640 stripped
 Transform:
@@ -4562,6 +4736,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 65
@@ -4618,7 +4796,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (65)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1253298208 stripped
 Transform:
@@ -4701,6 +4880,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -4749,7 +4932,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (24)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1272690760 stripped
 Transform:
@@ -4763,6 +4947,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 64
@@ -4819,7 +5007,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (64)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1276269121 stripped
 Transform:
@@ -4833,6 +5022,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -4881,7 +5074,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (28)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1281004501 stripped
 Transform:
@@ -4895,6 +5089,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -4943,7 +5141,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (35)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1297999432 stripped
 Transform:
@@ -4957,6 +5156,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 47
@@ -5005,7 +5208,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (47)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1317377224 stripped
 Transform:
@@ -5019,6 +5223,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 57
@@ -5067,7 +5275,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (57)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1321642889 stripped
 Transform:
@@ -5081,6 +5290,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 39
@@ -5129,7 +5342,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (39)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1390712638 stripped
 Transform:
@@ -5143,6 +5357,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -5191,7 +5409,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1411233381 stripped
 Transform:
@@ -5205,6 +5424,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 53
@@ -5253,7 +5476,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (53)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1437701847 stripped
 Transform:
@@ -5267,6 +5491,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -5315,7 +5543,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1446369583 stripped
 Transform:
@@ -5575,6 +5804,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -5623,7 +5856,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (17)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1579677080 stripped
 Transform:
@@ -5857,6 +6091,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -5905,7 +6143,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (42)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1647137809 stripped
 Transform:
@@ -5919,6 +6158,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -5967,7 +6210,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (36)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1648188790 stripped
 Transform:
@@ -5981,6 +6225,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -6029,7 +6277,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (22)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1664890213 stripped
 Transform:
@@ -6043,6 +6292,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -6091,7 +6344,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1685106770 stripped
 Transform:
@@ -6174,6 +6428,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -6222,7 +6480,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (29)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1736221442 stripped
 Transform:
@@ -6298,6 +6557,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 60
@@ -6346,7 +6609,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (60)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1794660409 stripped
 Transform:
@@ -6360,6 +6624,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -6408,7 +6676,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1811099031 stripped
 Transform:
@@ -6422,6 +6691,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 56
@@ -6470,7 +6743,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (56)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1811177299 stripped
 Transform:
@@ -6546,6 +6820,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -6594,7 +6872,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1843259945 stripped
 Transform:
@@ -6664,7 +6943,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoofWall (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1861437248 stripped
 Transform:
@@ -6678,6 +6958,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -6726,7 +7010,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (45)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1888923952 stripped
 Transform:
@@ -6740,6 +7025,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -6788,7 +7077,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (38)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1894801024 stripped
 Transform:
@@ -6858,7 +7148,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoofWall (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1901818802 stripped
 Transform:
@@ -6872,6 +7163,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -6920,7 +7215,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (41)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1909627558 stripped
 Transform:
@@ -6934,6 +7230,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -6982,7 +7282,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1917999218 stripped
 Transform:
@@ -6996,6 +7297,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -7044,7 +7349,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (27)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1920462608 stripped
 Transform:
@@ -7099,6 +7405,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -7147,7 +7457,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1924964033 stripped
 Transform:
@@ -7161,6 +7472,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -7209,7 +7524,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (40)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1964748626 stripped
 Transform:
@@ -7223,6 +7539,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -7271,7 +7591,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (20)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &1972453196 stripped
 Transform:
@@ -7378,6 +7699,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 59
@@ -7426,7 +7751,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (59)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &2023121802 stripped
 Transform:
@@ -7502,6 +7828,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -7550,7 +7880,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (31)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &2096820328 stripped
 Transform:
@@ -7564,6 +7895,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 63
@@ -7612,7 +7947,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall (63)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &2113050261 stripped
 Transform:
@@ -7626,6 +7962,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544472535}
     m_Modifications:
+    - target: {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106625709524175176, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7674,7 +8014,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorWall
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1095858193009028165, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ee1b4130b446e949bb7d7b37b02d125, type: 3}
 --- !u!4 &6577864237642084354 stripped
 Transform:
