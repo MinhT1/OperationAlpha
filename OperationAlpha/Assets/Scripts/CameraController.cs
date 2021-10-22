@@ -24,7 +24,7 @@ public class CameraController : MonoBehaviour
 
         //Vertical rotation
         verticalRotation -= y;
-        verticalRotation = Mathf.Clamp(verticalRotation, -90f, 0f);
+        verticalRotation = Mathf.Clamp(verticalRotation, -90f, 90f);
         transform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
 
         //horizontal rotation
