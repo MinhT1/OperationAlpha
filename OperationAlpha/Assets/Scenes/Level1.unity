@@ -11413,8 +11413,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.216
       objectReference: {fileID: 0}
+    - target: {fileID: 7053495010456865147, guid: 957ae8a20a59c4c4da5bd3a6e50003de, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1125330886}
+    - target: {fileID: 7053495010456865147, guid: 957ae8a20a59c4c4da5bd3a6e50003de, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 1125330885}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 957ae8a20a59c4c4da5bd3a6e50003de, type: 3}
+--- !u!198 &1125330885 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 938207866556038882, guid: 957ae8a20a59c4c4da5bd3a6e50003de, type: 3}
+  m_PrefabInstance: {fileID: 1125330884}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1125330886 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1648453118884765337, guid: 957ae8a20a59c4c4da5bd3a6e50003de, type: 3}
+  m_PrefabInstance: {fileID: 1125330884}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1132850037
 PrefabInstance:
   m_ObjectHideFlags: 0
