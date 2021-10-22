@@ -1,7 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:OperationAlpha/Assets/DungeonTraps/Effect/Materials/Tex_Eff_Fire.mat.meta
+guid: c6ba4799841e15244b9402d73b74ba24
+=======
 guid: 8e3f8a8347b3b28438c89f57b6f528e9
 timeCreated: 1534252740
 licenseType: Store
+>>>>>>> main:OperationAlpha/Assets/WM_SciFi_Weapon1_Lite/Materials/M_WM_SF_Wp01_a.mat.meta
 NativeFormatImporter:
   userData: 
   assetBundleName: 

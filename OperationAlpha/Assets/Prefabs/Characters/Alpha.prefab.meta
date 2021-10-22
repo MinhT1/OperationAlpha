@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:OperationAlpha/Assets/Scenes/BossArena2.unity.meta
+guid: 0ebfa1e9fe5c92d49bcacd6c8c517562
+DefaultImporter:
+=======
 guid: 957ae8a20a59c4c4da5bd3a6e50003de
 PrefabImporter:
+>>>>>>> main:OperationAlpha/Assets/Prefabs/Characters/Alpha.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
