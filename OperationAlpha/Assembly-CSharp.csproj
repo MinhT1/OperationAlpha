@@ -53,9 +53,18 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+=======
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\SwitchCorridor1.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Shooting.cs" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
