@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
+    <None Include="Assets\Fantasy Forest Environment Free Sample\StandardNoCulling.shader" />
     <None Include="Assets\Forest Set\Sources\Shaders\StandardSpecular_2Sided.shader" />
     <None Include="Assets\Castle Building Kit\ReadMe.txt" />
     <None Include="Assets\Forest Set\Sources\Shaders\Grid.shader" />
