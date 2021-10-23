@@ -1,8 +1,12 @@
 fileFormatVersion: 2
-guid: 3479abe40889881469c8d3349ec00325
+<<<<<<< HEAD:OperationAlpha/Assets/DungeonTraps/Effect/Materials/Tex_Eff_Smoke.mat.meta
+guid: c4b067ddec6cc424f92460a2a55fd741
+=======
+guid: 2e200267462ffd04bb3d44a6034b3c2b
+timeCreated: 1539833491
+licenseType: Store
+>>>>>>> main:OperationAlpha/Assets/WM_SciFi_Weapon1_Lite/Materials/M_WM_SF_Wp01_b.mat.meta
 NativeFormatImporter:
-  externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: bb5dc23df1933454ea7ce0daf28c78d7
+<<<<<<< HEAD:OperationAlpha/Assets/DungeonTraps/Effect.meta
+guid: 272cc4bffaec23b4b90397077a97db18
+=======
+guid: db3eb0a75b29e9f498d3815fcca9797a
+>>>>>>> main:OperationAlpha/Assets/Prefabs/Characters.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
