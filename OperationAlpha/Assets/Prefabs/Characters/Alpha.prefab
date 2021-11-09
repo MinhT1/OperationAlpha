@@ -2642,6 +2642,8 @@ GameObject:
   - component: {fileID: 1648453119869392876}
   - component: {fileID: 1648453119869392874}
   - component: {fileID: 1648453119869392875}
+  - component: {fileID: 6419012575913171434}
+  - component: {fileID: 1440346278830431591}
   m_Layer: 0
   m_Name: Alpha
   m_TagString: Untagged
@@ -2732,13 +2734,66 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650412158568471420}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3455d9ad9c068a44b950515ac4c438c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1648453119869392874}
   speed: 12
+--- !u!114 &6419012575913171434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650412158568471420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f828f55f50faf4017b1bfaaca53ebd71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCamera: {fileID: 0}
+  timer: 0
+  int_timer: 0
+  zRotation: 0
+  wantedZ: 0
+  timeSpeed: 2
+  timerToRotateZ: 0
+  mouseSensitvity: 0
+  mouseSensitvity_notAiming: 300
+  mouseSensitvity_aiming: 50
+  yRotationSpeed: 0
+  xCameraSpeed: 0
+  wantedYRotation: 0
+  currentYRotation: 0
+  wantedCameraXRotation: 0
+  currentCameraXRotation: 0
+  topAngleView: 60
+  bottomAngleView: -45
+  weapon: {fileID: 0}
+  showFps: 1
+--- !u!114 &1440346278830431591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650412158568471420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65862fe2a77934c2a8e0f7efd1755329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentGun: {fileID: 0}
+  gunsIHave: []
+  icons: []
+  switchWeaponCooldown: 0
+  menuStyle: 0
+  spacing: 10
+  beginPosition: {x: 0, y: 0}
+  size: {x: 0, y: 0}
+  weaponChanging: {fileID: 0}
 --- !u!1 &1650425661436646220
 GameObject:
   m_ObjectHideFlags: 0
