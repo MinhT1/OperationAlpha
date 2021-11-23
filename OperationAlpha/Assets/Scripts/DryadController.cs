@@ -46,6 +46,10 @@ public class DryadController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+    private void FixedUpdate()
+    {
         // Check if player is in sight/attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
@@ -54,12 +58,12 @@ public class DryadController : MonoBehaviour
         //{
         //    Patroling();
         //}
-        if (playerInSightRange && !playerInAttackRange)
+        if (!playerInAttackRange)
         {
             ChasePlayer();
         }
 
-        if (playerInSightRange && playerInAttackRange)
+        if (playerInAttackRange)
         {
             AttackPlayer();
         }
@@ -107,6 +111,7 @@ public class DryadController : MonoBehaviour
         agent.SetDestination(player.position);
     }
 
+    int randomAttackNum = 0;
     private void AttackPlayer()
     {
         agent.SetDestination(transform.position);
@@ -114,7 +119,10 @@ public class DryadController : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            Attack1();
+            //randomAttackNum = UnityEngine.Random.Range(1, 5);
+            //WaitForAnimation();
+            //RandomAttack(randomAttackNum);
+            AttackDown();
             //GameObject.Find("Player").GetComponent<PlayerDamage>().PlayerTakeDamage(attackDamage);
             StartCoroutine(AttackCooldown());
             alreadyAttacked = true;
@@ -122,9 +130,47 @@ public class DryadController : MonoBehaviour
         }
     }
 
+    
+    public void RandomAttack(int numbers)
+    {
+        //randomAttackNum = UnityEngine.Random.Range(1, 5);
+        if (numbers == 1)
+        {
+            WaitForAnimation();
+            AttackSweep();
+            
+        } 
+        else if (numbers == 2)
+        {
+
+            WaitForAnimation();
+            AttackDoubleCombo();
+            
+        } 
+        else if (numbers == 3)
+        {
+            WaitForAnimation();
+            Attack360();
+        }
+        else
+        {
+            WaitForAnimation();
+            AttackDown();
+            
+        }
+    }
+
     IEnumerator AttackCooldown()
     {
         yield return new WaitForSeconds(2);
+    }
+
+    private IEnumerator WaitForAnimation()
+    {
+        do
+        {
+            yield return null;
+        } while (anim.isPlaying);
     }
 
     private void ResetAttack()
@@ -163,14 +209,24 @@ public class DryadController : MonoBehaviour
         anim.Play("Run");
     }
     */
-    public void Attack1()
+    public void AttackDown()
     {
         anim.Play("Attacking Down");
     }
 
-    public void Attack2()
+    public void AttackSweep()
     {
-        anim.Play("Attack2");
+        anim.Play("Standing Sweep");
+    }
+    
+    public void AttackDoubleCombo()
+    {
+        anim.Play("Melee Double Combo");
+    }
+
+    public void Attack360()
+    {
+        anim.Play("360 Attack");
     }
 
     public void Dead()

@@ -53,20 +53,29 @@
     <UnityVersion>2020.3.16f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\GunInventory.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\DryadController.cs" />
     <Compile Include="Assets\Scripts\SwitchCorridor1.cs" />
-    <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
+    <Compile Include="Assets\Unity_Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\PlayerMovementScript.cs" />
+    <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\BulletScript.cs" />
+    <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\GunScript.cs" />
     <Compile Include="Assets\Scripts\Shooting.cs" />
+    <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\MouseLookScript.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\DestroyAfterTimeParticle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
-    <None Include="Assets\Fantasy Forest Environment Free Sample\StandardNoCulling.shader" />
-    <None Include="Assets\Forest Set\Sources\Shaders\StandardSpecular_2Sided.shader" />
-    <None Include="Assets\Castle Building Kit\ReadMe.txt" />
-    <None Include="Assets\Forest Set\Sources\Shaders\Grid.shader" />
-    <None Include="Assets\Forest Set\Sources\Shaders\Vegitation.shader" />
+    <None Include="Assets\Unity_Assets\Fantasy Forest Environment Free Sample\StandardNoCulling.shader" />
+    <None Include="Assets\Prefabs\Characters\Bosses\Ekidna\FireWing\Shader\Wing_Main.shader" />
+    <None Include="Assets\Unity_Assets\Forest Set\Sources\Shaders\StandardSpecular_2Sided.shader" />
+    <None Include="Assets\Unity_Assets\Castle Building Kit\ReadMe.txt" />
+    <None Include="Assets\Prefabs\Characters\Bosses\Ekidna\FireWing\Shader\Wing_Sub.shader" />
+    <None Include="Assets\Unity_Assets\Forest Set\Sources\Shaders\Grid.shader" />
+    <None Include="Assets\Unity_Assets\Forest Set\Sources\Shaders\Vegitation.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

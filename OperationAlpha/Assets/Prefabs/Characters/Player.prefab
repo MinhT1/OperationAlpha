@@ -1226,7 +1226,7 @@ MonoBehaviour:
   been_to_meele_anim: 0
   bloodEffect: {fileID: 1013274939826982, guid: ffbf169ab9dcfdc45ae14010bc82a6b2, type: 3}
   _jumpSound: {fileID: 7852917554629072055}
-  _freakingZombiesSound: {fileID: 7853361261439079207}
+  _freakingZombiesSound: {fileID: 0}
   _hitSound: {fileID: 7853298123613634987}
   _walkSound: {fileID: 7852905329758349243}
   _runSound: {fileID: 7853011928602732039}
