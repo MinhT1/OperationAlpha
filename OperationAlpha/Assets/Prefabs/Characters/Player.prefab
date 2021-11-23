@@ -1216,7 +1216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentSpeed: 0
   cameraMain: {fileID: 0}
-  jumpForce: 15000
+  jumpForce: 20000
   cameraPosition: {x: 0, y: 0, z: 0}
   maxSpeed: 5
   deaccelerationSpeed: 20
