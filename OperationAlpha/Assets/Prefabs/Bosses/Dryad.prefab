@@ -779,11 +779,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2530121997418928327}
   - component: {fileID: 2636424307666063525}
-  - component: {fileID: 2636424307666063527}
+  - component: {fileID: 909476893079929783}
   - component: {fileID: 2636424307666063524}
   - component: {fileID: 2636424307666063578}
   - component: {fileID: 2636424307666063526}
   - component: {fileID: 2636424307666063520}
+  - component: {fileID: 3680376547782121111}
+  - component: {fileID: 5518476782951295605}
+  - component: {fileID: 1062388680030601412}
   m_Layer: 0
   m_Name: Dryad
   m_TagString: Untagged
@@ -821,10 +824,10 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 118
   m_CollisionDetection: 0
---- !u!65 &2636424307666063527
-BoxCollider:
+--- !u!136 &909476893079929783
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -833,9 +836,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.5958895, y: 2.0000675, z: 0.7519997}
-  m_Center: {x: -0.0111586815, y: 1.033317, z: 0.07860489}
+  m_Radius: 0.46208477
+  m_Height: 2.2470672
+  m_Direction: 1
+  m_Center: {x: -0.0024889964, y: 1.0867367, z: -0.040404316}
 --- !u!111 &2636424307666063524
 Animation:
   m_ObjectHideFlags: 0
@@ -850,7 +854,9 @@ Animation:
   - {fileID: -203655887218126122, guid: 499585bbda932bb41909eeac3b816a8c, type: 3}
   - {fileID: -203655887218126122, guid: 60db5e869051e634e8042cc5d4059a16, type: 3}
   - {fileID: -203655887218126122, guid: e6645e4227000374da8df2de64ad06a3, type: 3}
-  - {fileID: -203655887218126122, guid: e6645e4227000374da8df2de64ad06a3, type: 3}
+  - {fileID: -203655887218126122, guid: 0256f73462f34fb4baa44a4d266a94a9, type: 3}
+  - {fileID: -203655887218126122, guid: b5fe1fd231177af4bb31ce4e89c9a14c, type: 3}
+  - {fileID: -203655887218126122, guid: 126742bd39bfb3d4d850d5db036ee7b7, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -864,7 +870,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2906823015574454909}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 499585bbda932bb41909eeac3b816a8c, type: 3}
   m_Controller: {fileID: 9100000, guid: eb0013b24e61a1c49a6bfae9ad87cfa2, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
@@ -888,7 +894,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 1
+  m_StoppingDistance: 5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -903,7 +909,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2906823015574454909}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47ca94400d0cb354996ed2b9aadfd593, type: 3}
   m_Name: 
@@ -926,6 +932,55 @@ MonoBehaviour:
   attackRange: 10
   playerInSightRange: 0
   playerInAttackRange: 0
+--- !u!114 &3680376547782121111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2906823015574454909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8b6ed2cbad3c74084a1ebdb8538189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 2636424307666063578}
+--- !u!114 &5518476782951295605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2906823015574454909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3475c4c645a83594e9fb0ff226a3ded5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dryadRigidBody: {fileID: 0}
+  currentTarget: {fileID: 0}
+  detectionLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  distanceFromTarget: 0
+  stoppingDistance: 6
+  rotationSpeed: 15
+--- !u!114 &1062388680030601412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2906823015574454909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a8bd256ae29564badb0441eadc09cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPerformingAction: 0
+  detectionRadius: 40
+  maximumAngleDetection: 50
+  minimumAngleDetection: -50
 --- !u!1 &2976883088364706092
 GameObject:
   m_ObjectHideFlags: 0
