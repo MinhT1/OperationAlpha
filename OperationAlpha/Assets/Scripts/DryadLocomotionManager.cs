@@ -11,12 +11,12 @@ namespace SG
         NavMeshAgent navMeshAgent;
         public Rigidbody dryadRigidBody;
 
-        public CapsuleCollider currentTarget;
+        public CharacterStats currentTarget;
         public LayerMask detectionLayer;
 
         public float distanceFromTarget;
-        public float stoppingDistance = 2.0f;
-        public float rotationSpeed = 15;
+        public float stoppingDistance = 10;
+        public float rotationSpeed = 40;
 
         private void Awake()
         {
@@ -38,7 +38,7 @@ namespace SG
 
             for (int i = 0; i < colliders.Length; i++)
             {
-                CapsuleCollider characterStats = colliders[i].transform.GetComponent<CapsuleCollider>();
+                CharacterStats characterStats = colliders[i].transform.GetComponent<CharacterStats>();
                 if (characterStats != null)
                 {
                     Vector3 targetDirection = characterStats.transform.position - transform.position;
@@ -50,6 +50,10 @@ namespace SG
 
         public void HandleMoveToTarget()
         {
+            if (dryadManager.isPerformingAction)
+            {
+                return;
+            }
             Vector3 targetDirection = currentTarget.transform.position - transform.position;
             distanceFromTarget = Vector3.Distance(currentTarget.transform.position, transform.position);
             float viewableAngle = Vector3.Angle(targetDirection, transform.forward);
@@ -61,9 +65,12 @@ namespace SG
                 navMeshAgent.enabled = false;
             } else
             {
+
+                // Impacts the when target is too far away
                 if (distanceFromTarget > stoppingDistance)
                 {
                     dryadAnimatorManager.anim.SetFloat("Vertical", 1, 0.1f, Time.deltaTime);
+                    transform.LookAt(targetDirection);
                 } 
                 else if (distanceFromTarget <= stoppingDistance)
                 {
@@ -72,7 +79,11 @@ namespace SG
             }
 
             HandleRotateTowardsTarget();
-            navMeshAgent.transform.localPosition = Vector3.zero;
+            // This is what is setting the initial position to 0
+            //navMeshAgent.transform.localPosition = Vector3.zero;
+            navMeshAgent.transform.localPosition = transform.position;
+
+            // This is what is causing the issue with the turning
             navMeshAgent.transform.localRotation = Quaternion.identity;
         }
 

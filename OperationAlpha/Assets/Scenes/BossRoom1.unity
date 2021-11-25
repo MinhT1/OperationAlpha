@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43888414, g: 0.48707813, b: 0.56734157, a: 1}
+  m_IndirectSpecularColor: {r: 0.43888456, g: 0.4870788, b: 0.56734246, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -498,15 +498,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7917093713226561995, guid: 2bc8904357ad54f439a278a0f4ea5c90, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 54.23684
+      value: 55.09
       objectReference: {fileID: 0}
     - target: {fileID: 7917093713226561995, guid: 2bc8904357ad54f439a278a0f4ea5c90, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.59
+      value: 2.69
       objectReference: {fileID: 0}
     - target: {fileID: 7917093713226561995, guid: 2bc8904357ad54f439a278a0f4ea5c90, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 23.153933
+      value: 22.55
       objectReference: {fileID: 0}
     - target: {fileID: 7917093713226561995, guid: 2bc8904357ad54f439a278a0f4ea5c90, type: 3}
       propertyPath: m_LocalRotation.w
@@ -546,6 +546,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bc8904357ad54f439a278a0f4ea5c90, type: 3}
+--- !u!1 &1330589729 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7917093713226829747, guid: 2bc8904357ad54f439a278a0f4ea5c90, type: 3}
+  m_PrefabInstance: {fileID: 874545792}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1330589737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330589729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd0c4fed85c5824299cae1de4952c52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthLevel: 10
+  health: 0
+  currentHealth: 0
+  staminaLevel: 10
+  maxStamina: 0
+  currentStamina: 0
 --- !u!1 &1337294480
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,15 +676,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 909476893079929783, guid: 2a42e2e2a2dc75b4a980da3a5c5c2ae2, type: 3}
       propertyPath: m_Height
-      value: 2.880028
-      objectReference: {fileID: 0}
-    - target: {fileID: 909476893079929783, guid: 2a42e2e2a2dc75b4a980da3a5c5c2ae2, type: 3}
-      propertyPath: m_Enabled
-      value: 1
+      value: 2.1456392
       objectReference: {fileID: 0}
     - target: {fileID: 909476893079929783, guid: 2a42e2e2a2dc75b4a980da3a5c5c2ae2, type: 3}
       propertyPath: m_Center.y
-      value: 0.77026474
+      value: 1.137484
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062388680030601412, guid: 2a42e2e2a2dc75b4a980da3a5c5c2ae2, type: 3}
+      propertyPath: detectionRadius
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062388680030601412, guid: 2a42e2e2a2dc75b4a980da3a5c5c2ae2, type: 3}
+      propertyPath: maximumAngleDetection
+      value: 130
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062388680030601412, guid: 2a42e2e2a2dc75b4a980da3a5c5c2ae2, type: 3}
+      propertyPath: minimumAngleDetection
+      value: -130
       objectReference: {fileID: 0}
     - target: {fileID: 2530121997418928327, guid: 2a42e2e2a2dc75b4a980da3a5c5c2ae2, type: 3}
       propertyPath: m_RootOrder
@@ -711,17 +742,21 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1657327094}
-    - target: {fileID: 2636424307666063525, guid: 2a42e2e2a2dc75b4a980da3a5c5c2ae2, type: 3}
-      propertyPath: m_Mass
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2636424307666063525, guid: 2a42e2e2a2dc75b4a980da3a5c5c2ae2, type: 3}
-      propertyPath: m_Constraints
-      value: 112
+    - target: {fileID: 2636424307666063526, guid: 2a42e2e2a2dc75b4a980da3a5c5c2ae2, type: 3}
+      propertyPath: m_Speed
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2906823015574454909, guid: 2a42e2e2a2dc75b4a980da3a5c5c2ae2, type: 3}
       propertyPath: m_Name
       value: Dryad
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518476782951295605, guid: 2a42e2e2a2dc75b4a980da3a5c5c2ae2, type: 3}
+      propertyPath: rotationSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518476782951295605, guid: 2a42e2e2a2dc75b4a980da3a5c5c2ae2, type: 3}
+      propertyPath: stoppingDistance
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a42e2e2a2dc75b4a980da3a5c5c2ae2, type: 3}
