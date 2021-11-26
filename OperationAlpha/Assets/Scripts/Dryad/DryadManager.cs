@@ -8,10 +8,12 @@ namespace SG
     {
         DryadLocomotionManager dryadLocomotionManager;
         DryadAnimatorManager dryadAnimatorManager;
-        public bool isPerformingAction;
+        DryadStats dryadStats;
 
-        public DryadAttackAction[] enemyAttacks;
-        public DryadAttackAction currentAttack;
+        public DryadState currentState;
+        public CharacterStats currentTarget;
+
+        public bool isPerformingAction;
 
         [Header("A.I Setting")]
         public float detectionRadius = 100;
@@ -27,6 +29,7 @@ namespace SG
         {
             dryadLocomotionManager = GetComponent<DryadLocomotionManager>();
             dryadAnimatorManager = GetComponent<DryadAnimatorManager>();
+            dryadStats = GetComponent<DryadStats>();
         }
         private void Update()
         {
@@ -35,28 +38,24 @@ namespace SG
 
         private void FixedUpdate()
         {
-            HandleCurrentAction();
+            HandleStateMachine();
         }
 
-        private void HandleCurrentAction()
+        private void HandleStateMachine()
         {
-            if (dryadLocomotionManager.currentTarget != null)
+            if (currentState != null)
             {
-                dryadLocomotionManager.distanceFromTarget = 
-                    Vector3.Distance(dryadLocomotionManager.currentTarget.transform.position, transform.position);
+                DryadState nextState = currentState.Tick(this, dryadStats, dryadAnimatorManager);
+                if (nextState != null)
+                {
+                    SwitchToNextState(nextState);
+                }
             }
-            if (dryadLocomotionManager.currentTarget == null)
-            {
-                dryadLocomotionManager.HandleDetection();
-            }
-            else if (dryadLocomotionManager.distanceFromTarget > dryadLocomotionManager.stoppingDistance)
-            {
-                dryadLocomotionManager.HandleMoveToTarget();
-            }
-            else if (dryadLocomotionManager.distanceFromTarget <= dryadLocomotionManager.stoppingDistance)
-            {
-                AttackTarget();
-            }
+        }
+
+        private void SwitchToNextState(DryadState dryadState)
+        {
+            currentState = dryadState;
         }
 
         private void HandleRecoveryTimer()
@@ -79,6 +78,7 @@ namespace SG
 
         private void AttackTarget()
         {
+            /**
             if (isPerformingAction)
             {
                 return;
@@ -95,10 +95,12 @@ namespace SG
                 dryadAnimatorManager.PlayTargetAnimation(currentAttack.actionAnimation, true);
                 currentAttack = null;
             }
+            */
         }
 
         private void GetNewAttack()
         {
+            /**
             Vector3 targetsDirection = dryadLocomotionManager.currentTarget.transform.position - transform.position;
             float viewableAngle = Vector3.Angle(targetsDirection, transform.forward);
             dryadLocomotionManager.distanceFromTarget = Vector3.Distance(dryadLocomotionManager.currentTarget.transform.position, transform.position);
@@ -144,6 +146,7 @@ namespace SG
                     }
                 }
             }
+            */
         }
         #endregion
 

@@ -787,6 +787,7 @@ GameObject:
   - component: {fileID: 3680376547782121111}
   - component: {fileID: 5518476782951295605}
   - component: {fileID: 1062388680030601412}
+  - component: {fileID: 3024034970988495672}
   m_Layer: 0
   m_Name: Dryad
   m_TagString: Untagged
@@ -958,13 +959,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dryadRigidBody: {fileID: 0}
-  currentTarget: {fileID: 0}
   detectionLayer:
     serializedVersion: 2
     m_Bits: 64
   distanceFromTarget: 0
-  stoppingDistance: 30
-  rotationSpeed: 15
+  stoppingDistance: 7
+  rotationSpeed: 100
 --- !u!114 &1062388680030601412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -977,17 +977,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13a8bd256ae29564badb0441eadc09cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: {fileID: 0}
+  currentTarget: {fileID: 0}
   isPerformingAction: 0
-  enemyAttacks:
-  - {fileID: 11400000, guid: 89910ec67d67c354b83e0029786070cf, type: 2}
-  - {fileID: 11400000, guid: 3da6ac06bda59b54288e424b16455a48, type: 2}
-  - {fileID: 11400000, guid: 8ad80fb17f4e295449b5dfd10d3edcad, type: 2}
-  - {fileID: 11400000, guid: 2a9ef54baf78e394ab658d91dc5224e8, type: 2}
-  currentAttack: {fileID: 0}
-  detectionRadius: 40
-  maximumAngleDetection: 50
-  minimumAngleDetection: -50
+  detectionRadius: 30
+  maximumAngleDetection: 130
+  minimumAngleDetection: -130
   currentRecoveryTime: 0
+--- !u!114 &3024034970988495672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2906823015574454909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 259c58aefdffb644ab2e211fa54665cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2976883088364706092
 GameObject:
   m_ObjectHideFlags: 0

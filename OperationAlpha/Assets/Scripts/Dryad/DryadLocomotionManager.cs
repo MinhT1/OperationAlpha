@@ -11,7 +11,6 @@ namespace SG
         NavMeshAgent navMeshAgent;
         public Rigidbody dryadRigidBody;
 
-        public CharacterStats currentTarget;
         public LayerMask detectionLayer;
 
         public float distanceFromTarget;
@@ -32,30 +31,14 @@ namespace SG
             dryadRigidBody.isKinematic = false;
         }
 
-        public void HandleDetection()
-        {
-            Collider[] colliders = Physics.OverlapSphere(transform.position, dryadManager.detectionRadius, detectionLayer);
-
-            for (int i = 0; i < colliders.Length; i++)
-            {
-                CharacterStats characterStats = colliders[i].transform.GetComponent<CharacterStats>();
-                if (characterStats != null)
-                {
-                    Vector3 targetDirection = characterStats.transform.position - transform.position;
-                    float viewableAngle = Vector3.Angle(targetDirection, transform.forward);
-                    currentTarget = characterStats;
-                }   
-            }
-        }
-
         public void HandleMoveToTarget()
         {
             if (dryadManager.isPerformingAction)
             {
                 return;
             }
-            Vector3 targetDirection = currentTarget.transform.position - transform.position;
-            distanceFromTarget = Vector3.Distance(currentTarget.transform.position, transform.position);
+            Vector3 targetDirection = dryadManager.currentTarget.transform.position - transform.position;
+            distanceFromTarget = Vector3.Distance(dryadManager.currentTarget.transform.position, transform.position);
             float viewableAngle = Vector3.Angle(targetDirection, transform.forward);
 
             // If doing action, stop movement
@@ -92,7 +75,7 @@ namespace SG
             // Rotate Manually
             if (dryadManager.isPerformingAction)
             {
-                Vector3 direction = currentTarget.transform.position - transform.position;
+                Vector3 direction = dryadManager.currentTarget.transform.position - transform.position;
                 direction.y = 0;
                 direction.Normalize();
 
@@ -111,7 +94,7 @@ namespace SG
                 Vector3 targetVelocity = dryadRigidBody.velocity;
 
                 navMeshAgent.enabled = true;
-                navMeshAgent.SetDestination(currentTarget.transform.position);
+                navMeshAgent.SetDestination(dryadManager.currentTarget.transform.position);
                 dryadRigidBody.velocity = targetVelocity;
                 transform.rotation = Quaternion.Slerp(transform.rotation, navMeshAgent.transform.rotation, rotationSpeed / Time.deltaTime);
             }

@@ -53,28 +53,35 @@
     <UnityVersion>2020.3.16f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\GunInventory.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\AnimatorManager.cs" />
-    <Compile Include="Assets\Scripts\DryadController.cs" />
+    <Compile Include="Assets\Scripts\Dryad\DryadController.cs" />
     <Compile Include="Assets\Scripts\SwitchCorridor1.cs" />
     <Compile Include="Assets\Unity_Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Pause.cs" />
     <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\PlayerMovementScript.cs" />
-    <Compile Include="Assets\Scripts\DryadManager.cs" />
+    <Compile Include="Assets\Scripts\Dryad\DryadManager.cs" />
     <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\BulletScript.cs" />
-    <Compile Include="Assets\Scripts\DryadAnimatorManager.cs" />
+    <Compile Include="Assets\Scripts\Dryad\DryadAnimatorManager.cs" />
     <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\GunScript.cs" />
     <Compile Include="Assets\Scripts\Shooting.cs" />
+    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\CharacterStats.cs" />
     <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\MouseLookScript.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
-    <Compile Include="Assets\Scripts\DryadLocomotionManager.cs" />
+    <Compile Include="Assets\Scripts\Dryad\DryadActions.cs" />
+    <Compile Include="Assets\Scripts\Dryad\DryadLocomotionManager.cs" />
     <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\DestroyAfterTimeParticle.cs" />
-    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
-    <Compile Include="Assets\Scripts\DryadActions.cs" />
-    <Compile Include="Assets\Scripts\DryadAttackAction.cs" />
+    <Compile Include="Assets\Scripts\Dryad\DryadAttackAction.cs" />
+    <Compile Include="Assets\Scripts\Dryad\DryadState.cs" />
+    <Compile Include="Assets\Scripts\Dryad\DryadStats.cs" />
+    <Compile Include="Assets\Scripts\Dryad\IdleState.cs" />
+    <Compile Include="Assets\Scripts\Dryad\PursueTargetState.cs" />
+    <Compile Include="Assets\Scripts\Dryad\CombatStanceState.cs" />
+    <Compile Include="Assets\Scripts\Dryad\AttackState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
