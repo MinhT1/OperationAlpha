@@ -1,10 +1,8 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class DryadController : MonoBehaviour    
+public class DryadController : MonoBehaviour
 {
     public Animation anim;
     float timer = 0.0f;
@@ -46,7 +44,7 @@ public class DryadController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void FixedUpdate()
     {
@@ -128,9 +126,22 @@ public class DryadController : MonoBehaviour
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttack);
         }
+
+/* Unmerged change from project 'Assembly-CSharp.Player'
+Before:
     }
 
     
+    public void RandomAttack(int numbers)
+After:
+    }
+
+
+    public void RandomAttack(int numbers)
+*/
+    }
+
+
     public void RandomAttack(int numbers)
     {
         //randomAttackNum = UnityEngine.Random.Range(1, 5);
@@ -138,15 +149,15 @@ public class DryadController : MonoBehaviour
         {
             WaitForAnimation();
             AttackSweep();
-            
-        } 
+
+        }
         else if (numbers == 2)
         {
 
             WaitForAnimation();
             AttackDoubleCombo();
-            
-        } 
+
+        }
         else if (numbers == 3)
         {
             WaitForAnimation();
@@ -156,7 +167,7 @@ public class DryadController : MonoBehaviour
         {
             WaitForAnimation();
             AttackDown();
-            
+
         }
     }
 
@@ -218,7 +229,7 @@ public class DryadController : MonoBehaviour
     {
         anim.Play("Standing Sweep");
     }
-    
+
     public void AttackDoubleCombo()
     {
         anim.Play("Melee Double Combo");

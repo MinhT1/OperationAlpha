@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace SG
 {
@@ -12,16 +11,21 @@ namespace SG
 
         public DryadState currentState;
         public CharacterStats currentTarget;
+        public NavMeshAgent navMeshAgent;
+        public Rigidbody dryadRigidBody;
 
         public bool isPerformingAction;
+        public float distanceFromTarget;
+        public float rotationSpeed = 40;
+        public float maximumAttackRange = 10;
 
         [Header("A.I Setting")]
         public float detectionRadius = 100;
-
         // Higher = bigger
         public float maximumAngleDetection = 130;
         // Lower = bigger
         public float minimumAngleDetection = -130;
+        public float viewableAngle;
 
         public float currentRecoveryTime = 0;
 
@@ -30,7 +34,17 @@ namespace SG
             dryadLocomotionManager = GetComponent<DryadLocomotionManager>();
             dryadAnimatorManager = GetComponent<DryadAnimatorManager>();
             dryadStats = GetComponent<DryadStats>();
+            dryadRigidBody = GetComponent<Rigidbody>();
+            navMeshAgent = GetComponent<NavMeshAgent>();
+
+            navMeshAgent.enabled = false;
         }
+
+        private void Start()
+        {
+            dryadRigidBody.isKinematic = false;
+        }
+
         private void Update()
         {
             HandleRecoveryTimer();
@@ -73,82 +87,5 @@ namespace SG
                 }
             }
         }
-
-        #region Attacks
-
-        private void AttackTarget()
-        {
-            /**
-            if (isPerformingAction)
-            {
-                return;
-            }
-
-            if (currentAttack == null)
-            {
-                GetNewAttack();
-            }
-            else
-            {
-                isPerformingAction = true;
-                currentRecoveryTime = currentAttack.recoveryTime;
-                dryadAnimatorManager.PlayTargetAnimation(currentAttack.actionAnimation, true);
-                currentAttack = null;
-            }
-            */
-        }
-
-        private void GetNewAttack()
-        {
-            /**
-            Vector3 targetsDirection = dryadLocomotionManager.currentTarget.transform.position - transform.position;
-            float viewableAngle = Vector3.Angle(targetsDirection, transform.forward);
-            dryadLocomotionManager.distanceFromTarget = Vector3.Distance(dryadLocomotionManager.currentTarget.transform.position, transform.position);
-
-            int maxScore = 0;
-
-            for (int i = 0; i < enemyAttacks.Length; i++)
-            {
-                DryadAttackAction enemyAttackAction = enemyAttacks[i];
-                if (dryadLocomotionManager.distanceFromTarget <= enemyAttackAction.maximumDistanceNeededToAttack
-                    && dryadLocomotionManager.distanceFromTarget >= enemyAttackAction.minimumDistanceNeededToAttack)
-                {
-                    if (viewableAngle <= enemyAttackAction.maximumAttackAngle
-                        && viewableAngle >= enemyAttackAction.minimumAttackAngle)
-                    {
-                        maxScore += enemyAttackAction.attackScore;
-                    }
-                }
-            }
-
-            int randomValue = Random.Range(0, maxScore);
-            int temporaryScore = 0;
-
-            for (int i = 0; i < enemyAttacks.Length; i++)
-            {
-                DryadAttackAction enemyAttackAction = enemyAttacks[i];
-                if (dryadLocomotionManager.distanceFromTarget <= enemyAttackAction.maximumDistanceNeededToAttack
-                    && dryadLocomotionManager.distanceFromTarget >= enemyAttackAction.minimumDistanceNeededToAttack)
-                {
-                    if (viewableAngle <= enemyAttackAction.maximumAttackAngle
-                        && viewableAngle >= enemyAttackAction.minimumAttackAngle)
-                    {
-                        if (currentAttack != null)
-                        {
-                            return;
-                        }
-                        temporaryScore += enemyAttackAction.attackScore;
-
-                        if (temporaryScore > randomValue)
-                        {
-                            currentAttack = enemyAttackAction;
-                        }
-                    }
-                }
-            }
-            */
-        }
-        #endregion
-
     }
 }

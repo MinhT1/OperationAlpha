@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43888414, g: 0.48707813, b: 0.56734157, a: 1}
+  m_IndirectSpecularColor: {r: 0.43888456, g: 0.4870788, b: 0.56734246, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a3b8c1853a5c4d4aa9ed1a2264f616c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combatStanceState: {fileID: 777221789}
 --- !u!1001 &9886387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -700,6 +701,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55b8591da44d59d469ad57878a08ba0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackState: {fileID: 1875629156}
+  pursueTargetState: {fileID: 3534165}
 --- !u!1001 &874545792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -802,7 +805,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1194853065}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1000,8 +1003,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1552131070}
-  - {fileID: 1958815374}
   - {fileID: 1022962263}
+  - {fileID: 1958815374}
   - {fileID: 771822959}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -1423,6 +1426,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffe5c64d7cae1f24ba7994657dc25c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combatStanceState: {fileID: 777221789}
+  enemyAttacks:
+  - {fileID: 11400000, guid: 89910ec67d67c354b83e0029786070cf, type: 2}
+  - {fileID: 11400000, guid: 3da6ac06bda59b54288e424b16455a48, type: 2}
+  - {fileID: 11400000, guid: 8ad80fb17f4e295449b5dfd10d3edcad, type: 2}
+  - {fileID: 11400000, guid: 2a9ef54baf78e394ab658d91dc5224e8, type: 2}
+  currentAttack: {fileID: 0}
 --- !u!1001 &1891797756
 PrefabInstance:
   m_ObjectHideFlags: 0

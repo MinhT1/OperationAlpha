@@ -1,27 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace SG
 {
     public class DryadAnimatorManager : AnimatorManager
     {
-        DryadLocomotionManager dryadLocomotionManager;
+        DryadManager dryadManager;
         private void Awake()
         {
             anim = GetComponent<Animator>();
-            dryadLocomotionManager = GetComponent<DryadLocomotionManager>();
+            dryadManager = GetComponent<DryadManager>();
         }
         private void OnAnimatorMove()
         {
             float delta = Time.deltaTime;
-            dryadLocomotionManager.dryadRigidBody.drag = 0;
+            dryadManager.dryadRigidBody.drag = 0;
 
             Vector3 deltaPosition = anim.deltaPosition;
             deltaPosition.y = 0;
 
             Vector3 velocity = deltaPosition / delta;
-            dryadLocomotionManager.dryadRigidBody.velocity = velocity;
+            dryadManager.dryadRigidBody.velocity = velocity;
         }
     }
 }

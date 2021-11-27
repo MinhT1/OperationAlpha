@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +6,7 @@ public class PlayerHealth : MonoBehaviour
     public Image healthBar;
     //public Text healthPercentage;
 
-    public float health,maxHealth = 100;
+    public float health, maxHealth = 100;
     float lerpSpeed;
 
     // Start is called before the first frame update
@@ -32,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
         Damage();
         HealthBarFiller();
         ColorChanger();
-        
+
     }
 
     void HealthBarFiller()
