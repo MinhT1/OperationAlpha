@@ -5037,7 +5037,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1921071494}
-  healthPercentage: {fileID: 0}
   health: 0
   maxHealth: 100
 --- !u!1001 &1583306330

@@ -26,6 +26,7 @@ public class PlayerMovementScript : MonoBehaviour
         bulletSpawn = cameraMain.Find("BulletSpawn").transform;
         ignoreLayer = 1 << LayerMask.NameToLayer("Player");
 
+
     }
     private Vector3 slowdownV;
     private Vector2 horizontalMovement;
@@ -42,7 +43,7 @@ public class PlayerMovementScript : MonoBehaviour
 	* Accordingly to input adds force and if magnitude is bigger it will clamp it.
 	* If player leaves keys it will deaccelerate
 	*/
-    void PlayerMovementLogic()
+    public void PlayerMovementLogic()
     {
         currentSpeed = rb.velocity.magnitude;
         horizontalMovement = new Vector2(rb.velocity.x, rb.velocity.z);
@@ -101,6 +102,36 @@ public class PlayerMovementScript : MonoBehaviour
             _runSound.Stop();
         }
     }
+
+    /*
+     * Dash Implementation
+     */
+    public Vector3 moveDirection;
+
+    public const float maxDashTime = 1.0f;
+    public float dashDistance = 3000;
+    public float dashStoppingSpeed = 0.1f;
+    float currentDashTime = maxDashTime;
+    float dashSpeed = 500;
+    void Dashing ()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            currentDashTime = 0;
+        }
+        if (currentDashTime < maxDashTime)
+        {
+            moveDirection = transform.forward * dashDistance;
+            currentDashTime += dashStoppingSpeed;
+        }
+        else
+        {
+            moveDirection = Vector3.zero;
+        }
+
+        rb.AddForce(moveDirection * dashSpeed, ForceMode.Impulse);
+    }
+
     /*
 	* Update loop calling other stuff
 	*/
@@ -113,6 +144,8 @@ public class PlayerMovementScript : MonoBehaviour
         Crouching();
 
         WalkingSound();
+
+        Dashing();
 
 
     }//end update
