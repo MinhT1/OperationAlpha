@@ -9,9 +9,27 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro_Map.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 0b877ddead747074793f158e6e5a93b8
+  - enabled: 0
     path: Assets/Scenes/Corridor1.unity
     guid: 981d8307cc6e3924a8732e83195dd06c
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 0b877ddead747074793f158e6e5a93b8
+    path: Assets/Scenes2/Corridor1_Updated.unity
+    guid: e8de8ea911aa22b4a9c3ad69c9f4f24e
+  - enabled: 1
+    path: Assets/Scenes/BossRoom1.unity
+    guid: ac4c1726e0f0c564f8f06ec73938b6e0
+  - enabled: 1
+    path: Assets/Scenes/Corridor2.unity
+    guid: 20506f6fe9c170e4582d1e8aa742bdc0
+  - enabled: 1
+    path: Assets/Scenes/BossRoom2.unity
+    guid: 628cb190bca8eba48b573f2510f97fa4
+  - enabled: 0
+    path: Assets/Scenes/Corridor3.unity
+    guid: aec13ed475fb3dd4daeea7fbc126053c
+  - enabled: 1
+    path: Assets/Scenes/BossRoom3.unity
+    guid: b76f32730402aa54ca1096a9fe3d2bea
   m_configObjects: {}
