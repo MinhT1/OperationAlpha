@@ -109,29 +109,33 @@ public class PlayerMovementScript : MonoBehaviour
     public Vector3 moveDirection;
 
     public const float maxDashTime = 1.0f;
-    public float dashDistance = 3000;
+    public float dashDistance = 3;
     public float dashStoppingSpeed = 0.1f;
     float currentDashTime = maxDashTime;
-    float dashSpeed = 500;
-    void Dashing ()
+    float dashSpeed = 5;
+    void Dashing()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Stamina.instance.currentStamina > 40)
         {
-            currentDashTime = 0;
-        }
-        if (currentDashTime < maxDashTime)
-        {
-            moveDirection = transform.forward * dashDistance;
-            currentDashTime += dashStoppingSpeed;
-        }
-        else
-        {
-            moveDirection = Vector3.zero;
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                currentDashTime = 0;
+                Stamina.instance.UseStamina(15);
+            }
+            if (currentDashTime < maxDashTime)
+            {
+                moveDirection = transform.forward * dashDistance;
+                currentDashTime += dashStoppingSpeed;
+            }
+            else
+            {
+                moveDirection = Vector3.zero;
+            }
+
+            rb.AddForce(moveDirection * dashSpeed, ForceMode.Impulse);
         }
 
-        rb.AddForce(moveDirection * dashSpeed, ForceMode.Impulse);
     }
-
     /*
 	* Update loop calling other stuff
 	*/
