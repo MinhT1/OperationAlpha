@@ -89,24 +89,6 @@
     <Compile Include="Assets\Scripts\Dryad\DryadLocomotionManager.cs" />
     <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\DestroyAfterTimeParticle.cs" />
     <Compile Include="Assets\Scripts\Dryad\DryadAttackAction.cs" />
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-    <Compile Include="Assets\Scripts\Dryad\DryadWeaponManager.cs" />
-    <Compile Include="Assets\Scripts\SwitchScenes\SwitchBossRoom1.cs" />
-    <Compile Include="Assets\Scripts\SwitchScenes\SwitchCorridor2.cs" />
->>>>>>> Stashed changes
-=======
-    <Compile Include="Assets\Scripts\Dryad\DryadWeaponManager.cs" />
-    <Compile Include="Assets\Scripts\SwitchScenes\SwitchBossRoom1.cs" />
-    <Compile Include="Assets\Scripts\SwitchScenes\SwitchCorridor2.cs" />
->>>>>>> Stashed changes
-=======
-    <Compile Include="Assets\Scripts\Dryad\DryadWeaponManager.cs" />
-    <Compile Include="Assets\Scripts\SwitchScenes\SwitchBossRoom1.cs" />
-    <Compile Include="Assets\Scripts\SwitchScenes\SwitchCorridor2.cs" />
->>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
@@ -740,6 +722,9 @@
     <Reference Include="Unity.ProBuilder.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
@@ -749,19 +734,14 @@
     <Reference Include="Unity.ProGrids.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProGrids">
       <HintPath>Library\ScriptAssemblies\Unity.ProGrids.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{D532EBBB-26F0-6E0E-7D38-478CEE3E994C}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{CC460AB6-701B-FFAF-0DF4-4D74AA423FC2}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
