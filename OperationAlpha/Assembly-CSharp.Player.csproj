@@ -62,7 +62,10 @@
     <Compile Include="Assets\Scripts\SwitchScenes\SwitchCorridor2.cs" />
     <Compile Include="Assets\Scripts\Dryad\DryadController.cs" />
     <Compile Include="Assets\Scripts\BlockPlayerCollision.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Assets\Scripts\Stamina.cs" />
+=======
+>>>>>>> Stashed changes
     <Compile Include="Assets\Scripts\Dryad\DryadState.cs" />
     <Compile Include="Assets\Scripts\BossHealthBar.cs" />
     <Compile Include="Assets\Scripts\Dryad\AttackState.cs" />
@@ -89,6 +92,9 @@
     <Compile Include="Assets\Scripts\Dryad\DryadLocomotionManager.cs" />
     <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\DestroyAfterTimeParticle.cs" />
     <Compile Include="Assets\Scripts\Dryad\DryadAttackAction.cs" />
+    <Compile Include="Assets\Scripts\Dryad\DryadWeaponManager.cs" />
+    <Compile Include="Assets\Scripts\SwitchScenes\SwitchBossRoom1.cs" />
+    <Compile Include="Assets\Scripts\SwitchScenes\SwitchCorridor2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
