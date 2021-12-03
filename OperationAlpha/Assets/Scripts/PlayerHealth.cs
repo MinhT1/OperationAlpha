@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -30,6 +31,10 @@ public class PlayerHealth : MonoBehaviour
         HealthBarFiller();
         ColorChanger();
 
+        if(health <= 0)
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 
     void HealthBarFiller()
@@ -49,5 +54,25 @@ public class PlayerHealth : MonoBehaviour
        // {
            health -= 10;
        // }
+    }
+
+    public void Kill()
+    {
+        // if (Input.GetKeyDown(KeyCode.B) && health > 0)
+        // {
+        health -= 100;
+        // }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Trap")
+        {
+            Damage();
+        }
+        if (collision.gameObject.tag == "Death")
+        {
+            Kill();
+        }
     }
 }

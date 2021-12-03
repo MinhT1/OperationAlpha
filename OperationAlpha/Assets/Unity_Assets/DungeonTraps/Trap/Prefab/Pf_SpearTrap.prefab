@@ -141,9 +141,10 @@ GameObject:
   - component: {fileID: 442850}
   - component: {fileID: 3342848}
   - component: {fileID: 2342848}
+  - component: {fileID: 1634837074545293264}
   m_Layer: 0
   m_Name: Spear
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -211,3 +212,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1634837074545293264
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25792786, y: 3.0811567, z: 0.16661751}
+  m_Center: {x: 0, y: -0.4610021, z: -0.000000018626451}

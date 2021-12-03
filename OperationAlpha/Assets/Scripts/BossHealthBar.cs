@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BossHealthBar : MonoBehaviour
 {
@@ -32,6 +33,7 @@ public class BossHealthBar : MonoBehaviour
         if (health <= -6)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 

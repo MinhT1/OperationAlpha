@@ -7,7 +7,7 @@ public class SwitchCorridor2 : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
         }
         //SceneManager.LoadScene(Corridor1SceneNumber);
     }
