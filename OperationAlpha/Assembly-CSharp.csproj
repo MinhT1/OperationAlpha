@@ -86,7 +86,13 @@
     <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\DestroyAfterTimeParticle.cs" />
     <Compile Include="Assets\Scripts\Dryad\DryadAttackAction.cs" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <Compile Include="Assets\Scripts\Stamina.cs" />
+=======
+    <Compile Include="Assets\Scripts\Dryad\DryadWeaponManager.cs" />
+    <Compile Include="Assets\Scripts\SwitchScenes\SwitchBossRoom1.cs" />
+    <Compile Include="Assets\Scripts\SwitchScenes\SwitchCorridor2.cs" />
+>>>>>>> Stashed changes
 =======
     <Compile Include="Assets\Scripts\Dryad\DryadWeaponManager.cs" />
     <Compile Include="Assets\Scripts\SwitchScenes\SwitchBossRoom1.cs" />
