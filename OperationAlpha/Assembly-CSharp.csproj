@@ -55,11 +55,14 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\GunInventory.cs" />
+    <Compile Include="Assets\Scripts\SwitchScenes\SwitchBossRoom1.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\AnimatorManager.cs" />
     <Compile Include="Assets\Scripts\Dryad\IdleState.cs" />
+    <Compile Include="Assets\Scripts\SwitchScenes\SwitchCorridor2.cs" />
     <Compile Include="Assets\Scripts\Dryad\DryadController.cs" />
     <Compile Include="Assets\Scripts\BlockPlayerCollision.cs" />
+    <Compile Include="Assets\Scripts\Stamina.cs" />
     <Compile Include="Assets\Scripts\Dryad\DryadState.cs" />
     <Compile Include="Assets\Scripts\BossHealthBar.cs" />
     <Compile Include="Assets\Scripts\Dryad\AttackState.cs" />
@@ -80,24 +83,12 @@
     <Compile Include="Assets\Scripts\CharacterStats.cs" />
     <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\MouseLookScript.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Dryad\DryadWeaponManager.cs" />
     <Compile Include="Assets\Scripts\Dryad\DryadActions.cs" />
     <Compile Include="Assets\Scripts\Dash.cs" />
     <Compile Include="Assets\Scripts\Dryad\DryadLocomotionManager.cs" />
     <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\DestroyAfterTimeParticle.cs" />
     <Compile Include="Assets\Scripts\Dryad\DryadAttackAction.cs" />
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    <Compile Include="Assets\Scripts\Stamina.cs" />
-=======
-    <Compile Include="Assets\Scripts\Dryad\DryadWeaponManager.cs" />
-    <Compile Include="Assets\Scripts\SwitchScenes\SwitchBossRoom1.cs" />
-    <Compile Include="Assets\Scripts\SwitchScenes\SwitchCorridor2.cs" />
->>>>>>> Stashed changes
-=======
-    <Compile Include="Assets\Scripts\Dryad\DryadWeaponManager.cs" />
-    <Compile Include="Assets\Scripts\SwitchScenes\SwitchBossRoom1.cs" />
-    <Compile Include="Assets\Scripts\SwitchScenes\SwitchCorridor2.cs" />
->>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
