@@ -63,7 +63,10 @@
     <Compile Include="Assets\Scripts\Dryad\DryadController.cs" />
     <Compile Include="Assets\Scripts\BlockPlayerCollision.cs" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <Compile Include="Assets\Scripts\Stamina.cs" />
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     <Compile Include="Assets\Scripts\Dryad\DryadState.cs" />
