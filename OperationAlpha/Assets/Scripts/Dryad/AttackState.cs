@@ -75,7 +75,6 @@ namespace SG
                         && viewableAngle >= enemyAttackAction.minimumAttackAngle)
                     {
                         maxScore += enemyAttackAction.attackScore;
-
                     }
                 }
             }

@@ -3,7 +3,9 @@ guid: 6a3b8c1853a5c4d4aa9ed1a2264f616c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - combatStanceState: {instanceID: 0}
+  - walkMovement: {fileID: 11400000, guid: 1987d401b80019b4e910ebf40bdd735f, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -26,7 +26,7 @@ public class PlayerHealth : MonoBehaviour
         }
 
         lerpSpeed = 3f * Time.deltaTime;
-        Damage();
+        //Damage();
         HealthBarFiller();
         ColorChanger();
 
@@ -45,9 +45,9 @@ public class PlayerHealth : MonoBehaviour
 
     public void Damage()
     {
-        if (Input.GetKeyDown(KeyCode.B) && health > 0)
-        {
-            health -= 5;
-        }
+       // if (Input.GetKeyDown(KeyCode.B) && health > 0)
+       // {
+           health -= 10;
+       // }
     }
 }

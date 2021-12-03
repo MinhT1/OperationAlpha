@@ -6,12 +6,13 @@ public class BossHealthBar : MonoBehaviour
     public Image healthBar;
     //public Text healthPercentage;
 
-    public float health, maxHealth = 100;
+    public float health, maxHealth = 300;
     float lerpSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
+
         health = maxHealth;
     }
 
@@ -26,10 +27,12 @@ public class BossHealthBar : MonoBehaviour
         }
 
         lerpSpeed = 3f * Time.deltaTime;
-        Damage();
         HealthBarFiller();
         ColorChanger();
-
+        if (health <= -6)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void HealthBarFiller()
@@ -45,9 +48,9 @@ public class BossHealthBar : MonoBehaviour
 
     public void Damage()
     {
-        if (Input.GetKeyDown(KeyCode.L) && health > 0)
-        {
-            health -= 2;
-        }
+        //if (Input.GetKeyDown(KeyCode.L) && health > 0)
+        //{
+        health -= 2;
+        //}
     }
 }

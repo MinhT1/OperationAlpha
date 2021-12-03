@@ -8,6 +8,10 @@ public class SwitchCorridor1 : MonoBehaviour
     int Corridor1SceneNumber = 2;
     public void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(Corridor1SceneNumber);
+        if (other.tag == "Player")
+        {
+            SceneManager.LoadScene(2);
+        }
+        //SceneManager.LoadScene(Corridor1SceneNumber);
     }
 }

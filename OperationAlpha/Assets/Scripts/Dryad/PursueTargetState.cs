@@ -5,6 +5,8 @@ namespace SG
     public class PursueTargetState : DryadState
     {
         public CombatStanceState combatStanceState;
+
+        public DryadAttackAction walkMovement;
         public override DryadState Tick(DryadManager dryadManager, DryadStats dryadStats, DryadAnimatorManager dryadAnimatorManager)
         {
             if (dryadManager.isPerformingAction)
@@ -19,6 +21,7 @@ namespace SG
             if (dryadManager.distanceFromTarget > dryadManager.maximumAttackRange)
             {
                 dryadAnimatorManager.anim.SetFloat("Vertical", 1, 0.1f, Time.deltaTime);
+
                 //transform.LookAt(targetDirection);
             }
 
@@ -58,7 +61,7 @@ namespace SG
             {
                 Vector3 relativeDirection = transform.InverseTransformDirection(dryadManager.navMeshAgent.desiredVelocity);
                 Vector3 targetVelocity = dryadManager.dryadRigidBody.velocity;
-
+                
                 dryadManager.navMeshAgent.enabled = true;
                 dryadManager.navMeshAgent.SetDestination(dryadManager.currentTarget.transform.position);
                 dryadManager.dryadRigidBody.velocity = targetVelocity;

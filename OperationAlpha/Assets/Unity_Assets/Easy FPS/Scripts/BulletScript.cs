@@ -28,15 +28,10 @@ public class BulletScript : MonoBehaviour
 		{
 			if (decalHitWall)
 			{
-				if (hit.transform.tag == "LevelPart")
+				BossHealthBar target = hit.transform.GetComponent<BossHealthBar>();
+				if (target != null)
 				{
-					Instantiate(decalHitWall, hit.point + hit.normal * floatInfrontOfWall, Quaternion.LookRotation(hit.normal));
-					Destroy(gameObject);
-				}
-				if (hit.transform.tag == "Dummie")
-				{
-					Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
-					Destroy(gameObject);
+					target.Damage();
 				}
 			}
 			Destroy(gameObject);
