@@ -79,18 +79,18 @@
     <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\GunScript.cs" />
     <Compile Include="Assets\Scripts\Shooting.cs" />
     <Compile Include="Assets\Scripts\Dryad\DryadStats.cs" />
+    <Compile Include="Assets\Scripts\DeathMenu.cs" />
     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\CharacterStats.cs" />
     <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\MouseLookScript.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\SwitchScenes\NextLevel.cs" />
     <Compile Include="Assets\Scripts\Dryad\DryadWeaponManager.cs" />
     <Compile Include="Assets\Scripts\Dryad\DryadActions.cs" />
     <Compile Include="Assets\Scripts\Dash.cs" />
     <Compile Include="Assets\Scripts\Dryad\DryadLocomotionManager.cs" />
     <Compile Include="Assets\Unity_Assets\Easy FPS\Scripts\DestroyAfterTimeParticle.cs" />
     <Compile Include="Assets\Scripts\Dryad\DryadAttackAction.cs" />
-    <Compile Include="Assets\Scripts\SwitchScenes\NextLevel.cs" />
-    <Compile Include="Assets\Scripts\DeathMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />

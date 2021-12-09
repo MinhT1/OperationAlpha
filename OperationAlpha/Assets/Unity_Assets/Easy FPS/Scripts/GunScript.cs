@@ -98,6 +98,25 @@ public class GunScript : MonoBehaviour
 
         Sprint(); //iff we have the gun you sprint from here, if we are gunless then its called from movement script
 
+        //control stamina when sprinting
+        if (pmS.maxSpeed == runningSpeed)
+        {
+            Stamina.instance.currentStamina -= 3 * Time.deltaTime;
+            Stamina.instance.staminaBar.value = Stamina.instance.currentStamina;
+        }
+        else if (pmS.maxSpeed == walkingSpeed)
+        {
+            Stamina.instance.currentStamina += 1 * Time.deltaTime;
+            Stamina.instance.staminaBar.value = Stamina.instance.currentStamina;
+        }
+
+        if (Stamina.instance.currentStamina <= 20)
+        {
+            pmS.maxSpeed = walkingSpeed;
+        }
+        
+        
+
         CrossHairExpansionWhenWalking();
 
 
@@ -195,16 +214,17 @@ public class GunScript : MonoBehaviour
 	 * Changes the max speed that player is allowed to go.
 	 * Also max speed is connected to the animator which will trigger the run animation.
 	 */
+
     void Sprint()
     {// Running();  so i can find it with CTRL + F
         if (Input.GetAxis("Vertical") > 0 && Input.GetAxisRaw("Fire2") == 0 && meeleAttack == false && Input.GetAxisRaw("Fire1") == 0)
         {
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
+                
                 if (pmS.maxSpeed == walkingSpeed)
                 {
                     pmS.maxSpeed = runningSpeed;//sets player movement peed to max
-
                 }
                 else
                 {

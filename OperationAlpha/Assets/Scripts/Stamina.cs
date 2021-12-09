@@ -33,11 +33,26 @@ public class Stamina : MonoBehaviour
 
     }
 
-    public void UseStamina(int amount)
+    public void UseStamina(float amount)
     {
         if (currentStamina - amount >= 0)
         {
             currentStamina -= amount;
+            staminaBar.value = currentStamina;
+
+            if (regen != null)
+            {
+                StopCoroutine(regen);
+            }
+            regen = StartCoroutine(RegenStamina());
+        }
+    }
+
+    public void UseStaminaSprint(float amount)
+    {
+        if (currentStamina - amount >= 0)
+        {
+            currentStamina -= amount * Time.deltaTime;
             staminaBar.value = currentStamina;
 
             if (regen != null)
