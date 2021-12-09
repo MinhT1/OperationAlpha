@@ -4,7 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public Image healthBar;
+    public Image healthBar; 
+    public GameObject deathMenu;
     //public Text healthPercentage;
 
     public float health, maxHealth = 100;
@@ -33,7 +34,14 @@ public class PlayerHealth : MonoBehaviour
 
         if(health <= 0)
         {
+            //Load death menu screen
             SceneManager.LoadScene(1);
+
+            //If we use death screen panel, load death menu panel
+            /*deathMenu.SetActive(true);
+            Time.timeScale = 0f;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;*/
         }
     }
 

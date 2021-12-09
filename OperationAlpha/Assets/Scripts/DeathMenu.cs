@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class DeathMenu : MonoBehaviour
 {
+    public GameObject deathMenu;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,13 @@ public class DeathMenu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
+
+        /*SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
+        deathMenu.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;*/
     }
 
     public void Exit()

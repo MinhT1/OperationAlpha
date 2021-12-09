@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8231019929511642426}
   - component: {fileID: 8231019929511642427}
   m_Layer: 5
-  m_Name: LoadButton
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,7 +120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8231019929511642426}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8231019929641960733
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,7 +896,7 @@ GameObject:
   - component: {fileID: 8231019930135510370}
   - component: {fileID: 8231019930135510371}
   m_Layer: 5
-  m_Name: LoadText
+  m_Name: RestartText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -937,7 +949,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Load
+  m_text: 'Restart
 
 '
   m_isRightToLeft: 0
