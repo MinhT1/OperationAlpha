@@ -23,8 +23,14 @@ public class Dash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.E))
         {
+            currentDashTime = 0;
+        }*/
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            GetComponent<Rigidbody>().AddForce(transform.right * -30, ForceMode.Impulse);
             currentDashTime = 0;
         }
         if (currentDashTime < maxDashTime)
@@ -36,6 +42,7 @@ public class Dash : MonoBehaviour
         {
             moveDirection = Vector3.zero;
         }
-        controller.Move(moveDirection * Time.deltaTime * dashSpeed);
+
+
     }
 }

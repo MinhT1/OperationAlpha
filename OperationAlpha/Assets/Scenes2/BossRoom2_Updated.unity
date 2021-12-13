@@ -1988,6 +1988,10 @@ PrefabInstance:
       propertyPath: playerBlockerCollider
       value: 
       objectReference: {fileID: 1799570943}
+    - target: {fileID: 7917093713221608487, guid: 2bc8904357ad54f439a278a0f4ea5c90, type: 3}
+      propertyPath: m_Mass
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 7917093713226561995, guid: 2bc8904357ad54f439a278a0f4ea5c90, type: 3}
       propertyPath: m_RootOrder
       value: 10

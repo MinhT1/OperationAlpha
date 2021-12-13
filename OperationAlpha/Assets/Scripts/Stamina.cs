@@ -9,7 +9,7 @@ public class Stamina : MonoBehaviour
     public int maxStamina = 100;
     public float currentStamina;
 
-    private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
+    private WaitForSeconds regenTick = new WaitForSeconds(0.04f);
     private Coroutine regen;
 
     public static Stamina instance;

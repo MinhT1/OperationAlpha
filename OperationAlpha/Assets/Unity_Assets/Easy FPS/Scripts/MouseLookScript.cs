@@ -16,6 +16,8 @@ public class MouseLookScript : MonoBehaviour
 		myCamera = GameObject.FindGameObjectWithTag("MainCamera").transform;
 	}
 
+	public float rotationSpeed;
+
 	/*
 	* Locking the mouse if pressing L.
 	* Triggering the headbob camera omvement if player is faster than 1 of speed
@@ -34,6 +36,10 @@ public class MouseLookScript : MonoBehaviour
 
 		if (GetComponent<PlayerMovementScript>().currentSpeed > 1)
 			HeadMovement();
+
+		//Character rotation
+		float rotatePlayerHorizontal = Input.GetAxis("Mouse X") * rotationSpeed;
+		transform.Rotate(0, rotatePlayerHorizontal, 0);
 
 	}
 

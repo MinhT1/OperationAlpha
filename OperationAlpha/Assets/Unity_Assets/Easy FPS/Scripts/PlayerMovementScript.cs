@@ -11,7 +11,7 @@ public class PlayerMovementScript : MonoBehaviour
     [Tooltip("Assign players camera here")]
     [HideInInspector] public Transform cameraMain;
     [Tooltip("Force that moves player into jump")]
-    public float jumpForce = 500;
+    public float jumpForce = 5000;
     [Tooltip("Position of the camera inside the player")]
     [HideInInspector] public Vector3 cameraPosition;
 
@@ -35,6 +35,8 @@ public class PlayerMovementScript : MonoBehaviour
 	*/
     void FixedUpdate()
     {
+        
+
         RaycastForMeleeAttacks();
 
         PlayerMovementLogic();
@@ -89,6 +91,7 @@ public class PlayerMovementScript : MonoBehaviour
     /*
 	* Handles jumping and ads the force and sounds.
 	*/
+    public bool doublejump = true;
     void Jumping()
     {
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
@@ -101,6 +104,15 @@ public class PlayerMovementScript : MonoBehaviour
             _walkSound.Stop();
             _runSound.Stop();
         }
+        if (Input.GetKeyDown(KeyCode.Space) && !grounded && doublejump == true)
+        {
+            rb.AddRelativeForce(Vector3.up * jumpForce);
+            doublejump = false;
+        }
+        if(grounded == true)
+        {
+            doublejump = true;
+        }
     }
 
     /*
@@ -109,10 +121,10 @@ public class PlayerMovementScript : MonoBehaviour
     public Vector3 moveDirection;
 
     public const float maxDashTime = 1.0f;
-    public float dashDistance = 3;
+    public float dashDistance = 300;
     public float dashStoppingSpeed = 0.1f;
     float currentDashTime = maxDashTime;
-    float dashSpeed = 5;
+    float dashSpeed = 5000;
     void Dashing()
     {
         if (Stamina.instance.currentStamina > 40)
@@ -120,8 +132,9 @@ public class PlayerMovementScript : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 currentDashTime = 0;
-                Stamina.instance.UseStamina(15);
-            }
+                Stamina.instance.UseStamina(40);
+                rb.AddForce(transform.forward * dashSpeed, ForceMode.Impulse);
+            }/*
             if (currentDashTime < maxDashTime)
             {
                 moveDirection = transform.forward * dashDistance;
@@ -130,9 +143,8 @@ public class PlayerMovementScript : MonoBehaviour
             else
             {
                 moveDirection = Vector3.zero;
-            }
+            }*/
 
-            rb.AddForce(moveDirection * dashSpeed, ForceMode.Impulse);
         }
 
     }
@@ -141,8 +153,6 @@ public class PlayerMovementScript : MonoBehaviour
 	*/
     void Update()
     {
-
-
         Jumping();
 
         Crouching();
@@ -150,7 +160,6 @@ public class PlayerMovementScript : MonoBehaviour
         WalkingSound();
 
         Dashing();
-
 
     }//end update
 
