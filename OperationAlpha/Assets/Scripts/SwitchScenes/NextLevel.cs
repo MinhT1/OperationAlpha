@@ -22,6 +22,7 @@ public class NextLevel : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            
         }
     }
 }
