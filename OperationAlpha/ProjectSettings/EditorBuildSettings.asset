@@ -29,10 +29,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/BossRoom2.unity
     guid: 628cb190bca8eba48b573f2510f97fa4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes2/BossRoom2_Updated.unity
     guid: 26a88136827ff4940975b762ea539c7a
+  - enabled: 1
+    path: Assets/Scenes2/Corridor3_Updated.unity
+    guid: 20d62d418e2da5141914f790aefa54a1
   - enabled: 0
     path: Assets/Scenes/BossRoom3.unity
     guid: b76f32730402aa54ca1096a9fe3d2bea
+  - enabled: 1
+    path: Assets/Scenes2/WinScreen.unity
+    guid: b2b141c031826c54c9e7234377628ef5
   m_configObjects: {}
